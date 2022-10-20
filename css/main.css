@@ -1,0 +1,290 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    font-family: "Noto Sans KR", sans-serif;
+}
+.main label{
+    font-weight: 800;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    margin-top: -72px;
+    z-index: 10;
+    background-color: #fff;
+}
+.header {
+    /* display: fixed; */
+    background-color: #fff;
+   
+    height: 72px;
+    width: 1280px;
+    margin: 0 auto;
+
+} 
+.header-content {
+    width: 2.5% 15%;
+    display: flex;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+
+}
+.header-logo {
+    /* margin-top: 6px; */
+}
+.ex{
+margin-top: 72px;
+}
+.header-file {
+    font-size: 15px;
+    /* margin-top: 20px; */
+    font-weight: 900;
+    /* margin-right: 12px; */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+}
+.title {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.title__text {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+/* 메인 페이지 */
+.body{
+    background-color: #F3F3F3;
+}
+
+.main{
+    width: 1280px;
+    margin: 60px auto 100px auto;
+    padding: 65px 50px;
+    background-color: #fff;
+    
+}
+.blueline{
+    height: 2px;
+    background-color: #238AF7;
+}
+.main .bigT{
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: -12px;
+}
+.main .smallT{
+    font-size: 14px;
+    font-weight: 400;
+    color: #DD4B39;
+    vertical-align: super;
+}
+label{
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 6px;
+}
+.addpadding{
+    padding-top: 26px;
+}
+.addpadding2{
+    padding-top: 6px;
+}
+.addpadding3{
+    padding-bottom: 6px;
+}
+.red{
+    color: #DD4B39;
+}
+.add-btn{
+    width: 65px;
+    height: 44px;
+    color: #fff;
+    border-radius: 0;
+    background-color: #238AF7;
+}
+
+.input-group-btn{
+    border-radius: 0 10px 10px 0;
+    background-color: #337AB7;
+}
+
+
+/* 추가항목 */
+.delete-btn{
+    width: 65px;
+    height: 44px;
+    color: #fff;
+    border-radius: 0;
+    background-color: #929496;
+}
+button.delete-btn:hover{
+    color: #000;
+    background-color: red;
+}
+
+/* 첫항목 */
+.one-title{
+    padding-left: 0;
+}
+.img-content{
+    
+}
+.one-img{
+    margin-left: 0;
+    display: inline-block;
+}
+.one-img img{
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    margin-left: 12px;
+    border: none;
+    
+}
+.main .one-content{
+    display: flex;
+    padding-top: 24px;
+    padding-right: 0;
+    padding-left: 0;
+    
+    /* padding-left: 24px; */
+}
+.one .one-detail{
+    /* background-color: #DD4B39; */
+    padding-right: 0;
+}
+.one .detail-one-content{
+    background-color: #238AF7;
+}
+.detail-r-content{
+    padding-left: 24px;
+}
+.index{
+    z-index: 100;
+}
+
+.two{
+    padding-top: 26px;
+}
+.two-content{
+    /* padding-right: 0;
+    padding-left: 0; */
+}
+
+.plusT{
+    font-size: 14px;
+    font-weight: 400;
+    color: #DD4B39;
+    margin-left: -12px;
+}
+
+
+.three{
+    padding-top: 26px;
+}
+
+.Gender input{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+footer{
+    background-color: #3E3E3E;
+    height: 143px;
+    color: #929496;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-text{
+    margin-left: 180px;
+}
+
+footer .footer-content{
+    padding-top: 76px;
+    padding-left: 62px;
+    display: flex;
+}
+
+
+/*모달창*/
+.x-bt{
+    border: none;
+    background-color: #fff;
+}
+.x-btn{
+    width: 20px;
+    height: 23px;
+    color: #929496;
+    font-size: 23px;
+}
+
+.modal{
+    margin-top: 36px;
+}
+
+.modal .btn-default{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal .btn-default:hover{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #F3F3F3;
+}
+
+.modal .btn-modal{
+    background-color: #238AF7;
+    
+}
+.modal .input-group{
+    margin-bottom: 15px;
+}
+
+.modal .form-list{
+    height: 300px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 4px solid #ddd;
+    /* overflow-y: hidden; */
+}
+.modal .form-list2{
+    height: 300px;
+    margin: 0;
+    box-sizing: border-box;
+   
+    /* overflow-y: hidden; */
+}
+
+.modal .thline{
+    border-bottom: 2px solid #ddd;
+    
+}
+.modal .thline2{
+    border-bottom: 4px solid #ddd;
+    
+}
+.modal .modal-body{
+    margin-bottom: 15px;
+}
+.modal thead{
+    font-weight: 900;
+}
+
+.modal .modal-footer{
+    border-top: 1px solid #e5e5e5;
+    
+}
+
+.modal .btn-under{
+
+}

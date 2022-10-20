@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>전라북도교육청 학교운동부지도자 등록 서비스</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+        <!-- 일단 아무 타이틀 사진 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./images/title_logo.png">
+
+        <!-- css, 부트스트랩 연결-->
+        <link rel="stylesheet" href="./css/main.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous">
+    </head>
+
+    <body class="body">
+        <header>
+            <!-- 헤더 항목 -->
+            <div class="header">
+                <div class="container header-content">
+                    <a href="#">
+                        <img class="header-logo" src="./images/header_logo.png" alt="header-logo"/>
+                    </a>
+                    <a class="header-file">파일전송</a>
+                </div>
+            </div>
+        </header>
+        <div class="ex">
+            <div class="title">
+                <div class="title__text">
+                    전라북도교육청 학교운동부지도자 이력 및 지도실적
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 항목 -->
+        <div class="main">
+            <!-- 전체항목 -->
+            <div class="container">
+                <form action="#" method="POST">
+                    <!-- 1번 항목 -->
+                    <div class="row one">
+                        <div class="one-title">
+                            <span class="bigT">1. 일반 현황(2022년 1월 1일 기준)</span><span class="smallT">*필수</span>
+                        </div>
+                        <div class="blueline"></div>
+                        <div class="one-content">
+                            <div class="col-lg-3 col-md-3 col-sm-3 one-img">
+                                <div class="img-content img-thumbnail box-thumbnail img-responsive">
+                                    <img class="img-responsive form-control" src="" alt="">
+                                    <input class="form-control index" type="file" accept="image/*">
+                                </div>
+                                <div class="img-detail addpadding2 red">* 파일 크기는 4MB 이하로 등록해주세요.</div>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 one-detail">
+                                <!-- 1번의 항목들 -->
+                                <div class="row detail-r-content">
+                                    <div class="col-lg-6 one-first-row">
+                                        <div class="idcode">
+                                            <label>식별코드</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="식별코드를 선택해주세요." id="No" name="No">
+                                                <span class="input-group-btn">
+                                                    <input type="button" class="btn btn-primary" value="식별코드검색">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 one-first-row">
+                                        <div class="schoolName">
+                                            <label>학교명</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    placeholder="학교명을 선택해주세요."
+                                                    id="No"
+                                                    name="No">
+                                                <span class="input-group-btn">
+                                                    <input
+                                                        type="button"
+                                                        class="btn btn-primary"
+                                                        id="LeaderNoBtn"
+                                                        data-target="#LeaderList"
+                                                        data-toggle="modal"
+                                                        value="학교 검색">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="row detail-r-content addpadding">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>성명</label>
+                                            <input
+                                                class="form-control"
+                                                name="LeaderName"
+                                                type="text"
+                                                value=""
+                                                placeholder="이름을 입력하세요.">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>생년월일</label>
+                                            <input
+                                                class="form-control "
+                                                type="date"
+                                                id="BirthDay"
+                                                name="BirthDay"
+                                                value="2022-10-17">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="m-b-1">성별</label><br>
+                                            <div class="Gender">
+                                                <div>
+                                                    <input type="radio" name="Gender" value="MAN">
+                                                    <span style="margin-right: 30px">남자</span>
+                                                    <input type="radio" name="Gender" value="WOMAN"> 여자
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="row detail-r-content addpadding">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>종목</label>
+                                            <select class="form-select" id="infoSportsNo" name="SportsNo">
+                                                <option value="">종목을 선택하세요.</option>
+                                                <option value="CN0001">검도</option>
+                                                <option value="CN0002">근대3종</option>
+                                                <option value="CN0003">근대5종</option>
+                                                <option value="CN0004">기계체조</option>
+                                                <option value="CN0005">농구<option value="CN0006">도약</option>
+                                                    <option value="CN0007">럭비</option>
+                                                    <option value="CN0008">레슬링</option>
+                                                    <option value="CN0009">롤러</option>
+                                                    <option value="CN0000">미등록사용자</option>
+                                                    <option value="CN0043">바둑</option>
+                                                </select>
+                                                <input
+                                                    class="form-control"
+                                                    type="hidden"
+                                                    id="hidSportsNo"
+                                                    name="hidSportsNo"
+                                                    value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label>근무지 전화번호</label>
+                                                <input
+                                                    class="form-control"
+                                                    type="tel"
+                                                    name="TelNo"
+                                                    value=""
+                                                    placeholder="ex) 063-111-1111">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label>최초채용</label>
+                                                <input
+                                                    class="form-control hasDatepicker"
+                                                    type="date"
+                                                    id="EmpDT"
+                                                    name="EmpDT"
+                                                    value="2022-01-17">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row detail-r-content addpadding2">
+                                        <div class="col-lg-4"></div>
+                                        <div class="col-lg-4"></div>
+                                        <div class="col-lg-4">
+                                            <p>최초 채용일은
+                                                <strong class="red">전라북도교육청 소속 최초 채용일</strong>을 입력하세요.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                        <!-- 2번 항목 -->
+                    <div class="row two">
+                            <div class="one-title">
+                                <span class="bigT">2. 근무이력(전라북도교육청 소속 - 최초 채용일부터)</span><span class="smallT">*필수</span>
+                                <div class="plusT">*현재 근무 중인 경우 근무 종료일을 입력하지 마십시오.</div>
+                            </div>
+                            <div class="blueline"></div>
+                            <div class="two-content">
+                                <div class="col-lg-12 m-b-3">
+                                    <div class="row">
+                                        <div class="table-responsive" style="padding: 0;">
+                                            <table class="table" id="two-grid">
+                                                <thead>
+                                                    <tr class="table-header">
+                                                        <th class="tb-w-30" scope="col">근무기관</th>
+                                                        <th class="tb-w-30">근무시작일</th>
+                                                        <th class="tb-w-30">근무종료일</th>
+                                                        <th class="tb-w-30" scope="col">종목</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="LeaderWorkingExperience">
+                                                    <tr>
+                                                        <td>
+                                                            <input class="form-control" type="text" name="">
+                                                        </td>
+                                                        <td>
+                                                            <input class="form-control" type="date" name="" value="2022-10-22">
+                                                        </td>
+                                                        <td>
+                                                            <input class="form-control" type="date" name="" value="2022-10-22">
+                                                        </td>
+                                                        <td>
+                                                            <select class="form-select" id="HisSportsNo" name="SportsNo">
+                                                                <option value="ClubNameNull">종목을 선택하세요.</option>
+                                                                <option value="CN0001">검도</option>
+                                                                <option value="CN0002">근대3종</option>
+                                                                <option value="CN0003">근대5종</option>
+                                                                <option value="CN0004">기계체조</option>
+                                                                <option value="CN0005">농구</option>
+                                                                <option value="CN0006">도약</option>
+                                                                <option value="CN0007">럭비</option>
+                                                                <option value="CN0008">레슬링</option>
+                                                                <option value="CN0009">롤러</option>
+                                                                <option value="CN0000">미등록사용자</option>
+                                                                <option value="CN0043">바둑</option>
+                                                        </td>
+                                                        <td>
+                                                            <div class="add-btn">
+                                                                <input type="button" class="btn add-btn" value="추가" style="color: #fff;"></td>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+
+                    </div>
+                        <!-- 3번 항목 -->
+                    <div class="row three">
+                            <div class="one-title">
+                                <span class="bigT">3. 자격사항</span><span class="smallT">*필수</span>
+                            </div>
+                            <div class="blueline"></div>
+                            <div class="three-content">
+                                <div class="row">
+                                    <div class="table-responsive" style="padding: 0;">
+                                        <table class="table" id="certificate_table">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th class="tb-w-30" scope="col">자격/면허</th>
+                                                    <th class="tb-w-30">자격번호</th>
+                                                    <th class="tb-w-30">취득일자</th>
+                                                    <th class="tb-w-30" scope="col">발급기관</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="LeaderCertificate">
+                                                <tr>
+                                                    <td>
+                                                        <select
+                                                            class="form-select valid selectpicker"
+                                                            name="CertificateName"
+                                                            id="licenseName">
+                                                            <option value="null">선택하세요.</option>
+                                                            <option value="1급 전문스포츠지도사">1급 전문스포츠지도사</option>
+                                                            <option value="2급 전문스포츠지도사">2급 전문스포츠지도사</option>
+                                                            <option value="건강운동관리사">건강운동관리사</option>
+                                                            <option value="1급 생활스포츠지도사">1급 생활스포츠지도사</option>
+                                                            <option value="2급 생활스포츠지도사">2급 생활스포츠지도사</option>
+                                                        </select>
+                                                    </td>
+                                                    <td><input class="form-control" type="text" id="licenseNumber" name="CertificateNumber"></td>
+                                                    <td><input class="form-control" type="date" id="licenseDate" name="CertificateDT" value="2022-10-19"></td>
+                                                    <td>
+                                                        <select class="form-select valid" name="Organization" id="licenseOrgan">
+                                                            <option value="Null">선택하세요.</option>
+                                                            <option value="문화체육관광부장관">문화체육관광부장관</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <div class="add-btn">
+                                                            <input type="button" class="btn add-btn" value="추가" style="color: #fff;"></td>
+                                                        </div>
+                                                    </td>
+                                                    
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                    </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        <footer class="footer-bg">
+            <div class="container">
+                <div class="footer-content">
+                    <div>
+                        <p class="footer-text-title">
+                            기술지원 및 문의처 (주)헤드아이티
+                        </p>
+                    </div>
+                    <div>
+                        <p class="footer-text">
+                            전라북도 전주시 완산구 홍산남로19 즐거운빌딩 5층<br>
+                            TEL : 063-243-8972 &nbsp; FAX : 0303-3130-8972 COPYRIGHT © HEADIT.All Rights
+                            Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="modal modal-lg fade" id="modal-idcode" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">식별코드 검색</h4>
+                  <button type="button" class="close x-bt" data-dismiss="modal" aria-label="Close"><span class="x-btn" onclick="closeIDModal()" aria-hidden="true">x</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 이름으로 검색해주세요 -->
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="이름으로 검색">
+                        <span class="input-group-btn">
+                            <input type="button" class="btn btn-modal" value="검색" style="color: #fff;">
+                        </span>
+                    </div>
+                    
+                    <div class="form-list table-responsive" >
+                        <div class="table-responsive">
+                            <div id="dtLeaderList_wrapper" class="dataTables_wrapper dt-bootstrap no-footer">
+                                <table id="dtLeaderList" class="table table-striped table-hover dataTable no-footer" role="grid">
+                                <thead class="thline">
+                                    <tr role="row"><th class="text-center sorting_desc" tabindex="0" aria-controls="dtLeaderList" rowspan="1" colspan="1" aria-label="순번: activate to sort column ascending" aria-sort="descending">순번</th><th class="text-center sorting" tabindex="0" aria-controls="dtLeaderList" rowspan="1" colspan="1" aria-label="식별코드: activate to sort column ascending">식별코드</th><th class="text-center sorting" tabindex="0" aria-controls="dtLeaderList" rowspan="1" colspan="1" aria-label="이름: activate to sort column ascending">이름</th><th class="text-center sorting" tabindex="0" aria-controls="dtLeaderList" rowspan="1" colspan="1" aria-label="학교명: activate to sort column ascending">학교명</th><th class="text-center sorting" tabindex="0" aria-controls="dtLeaderList" rowspan="1" colspan="1" aria-label="종목: activate to sort column ascending">종목</th></tr>
+                                </thead>
+                                <tbody id="LeaderNameList">
+                                    <tr class="odd"><td class="text-center">1</td><td class="text-center">JB19-001</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="even"><td class="text-center">2</td><td class="text-center">JB19-002</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="odd"><td class="text-center">3</td><td class="text-center">JB19-003</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="even"><td class="text-center">4</td><td class="text-center">JB19-004</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="odd"><td class="text-center">5</td><td class="text-center">JB19-005</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="even"><td class="text-center">6</td><td class="text-center">JB19-006</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="odd"><td class="text-center">7</td><td class="text-center">JB19-007</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="even"><td class="text-center">8</td><td class="text-center">JB19-008</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="odd"><td class="text-center">9</td><td class="text-center">JB19-009</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="even"><td class="text-center">10</td><td class="text-center">JB19-010</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="odd"><td class="text-center">11</td><td class="text-center">JB19-011</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                    <tr class="even"><td class="text-center">12</td><td class="text-center">JB19-012</a></td><td class=" text-center">송유지</a></td><td class=" text-center">전주비전대학교</td><td class=" text-center">운동!</td></tr>
+                                
+                                </tbody>
+                            </table>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="pagination justify-content-center" >
+                                            <li class="page-item "><a class="page-link" href="#"><</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">28</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+              </div><!-- /.modal-content -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-under btn-default" onclick="closeIDModal()" data-dismiss="modal">닫기</button>
+              </div>
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+
+          </div>
+          <div class="modal modal-lg fade" id="modal-schoolName" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">소속 학교 검색</h4>
+                  <button type="button" class="close x-bt" data-dismiss="modal" aria-label="Close"><span class="x-btn " onclick="closeScModal()" aria-hidden="true">x</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 검색어 입력-->
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="검색어 입력">
+                        <span class="input-group-btn">
+                            <input type="button" class="btn btn-modal" value="검색" style="color: #fff;">
+                        </span>
+                    </div>
+                    
+                    <div class="form-list2 table-responsive" >
+                        <div class="table-responsive">
+                            <div id="dtLeaderList_wrapper" class="dataTables_wrapper dt-bootstrap no-footer">
+                                <table id="dtLeaderList" class="table table-striped table-hover dataTable no-footer" role="grid">
+                                <thead class="thline2">
+                                    <tr role="row">
+                                        <th class="text-center sorting_desc" tabindex="0" aria-controls="dtLeaderList" rowspan="1" colspan="1" aria-sort="descending">순번</th>
+                                        <th class="text-center sorting" tabindex="0" aria-controls="dtLeaderList" rowspan="1" colspan="1">식별코드</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="LeaderNameList">
+                                    <tr class="odd"><td class="text-center">1</td><td class="text-center">JB19-001</a></td></tr>
+                                    <tr class="even"><td class="text-center">2</td><td class="text-center">JB19-002</a></td></tr>
+                                    <tr class="odd"><td class="text-center">3</td><td class="text-center">JB19-003</a></td></tr>
+                                    <tr class="even"><td class="text-center">4</td><td class="text-center">JB19-004</a></td></tr>
+                                    <tr class="odd"><td class="text-center">5</td><td class="text-center">JB19-005</a></td></tr>
+                                    <tr class="even"><td class="text-center">6</td><td class="text-center">JB19-006</a></td></tr>
+                                    <tr class="odd"><td class="text-center">7</td><td class="text-center">JB19-007</a></td></tr>
+                                    <tr class="even"><td class="text-center">8</td><td class="text-center">JB19-008</a></td></tr>
+                                    <tr class="odd"><td class="text-center">9</td><td class="text-center">JB19-009</a></td></tr>
+                                    <tr class="even"><td class="text-center">10</td><td class="text-center">JB19-010</a></td></tr>
+                                    <tr class="odd"><td class="text-center">11</td><td class="text-center">JB19-011</a></td></tr>
+                                    <tr class="even"><td class="text-center">12</td><td class="text-center">JB19-012</a></td></tr>
+                                
+                                </tbody>
+                            </table>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="pagination justify-content-center" >
+                                            <li class="page-item "><a class="page-link" href="#"><</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">21</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+              </div><!-- /.modal-content -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-under btn-default" onclick="closeScModal()" data-dismiss="modal">닫기</button>
+              </div>
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+
+            
+            <script
+                src="https://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                crossorigin="anonymous"></script>
+            
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+                crossorigin="anonymous"></script>
+            <script src="./js/main.js"></script>
+        </body>
+
+    </html>
