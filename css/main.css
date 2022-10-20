@@ -8,11 +8,13 @@
 }
 
 header{
-    position: fixed;
     width: 100%;
-    margin-top: -72px;
     z-index: 10;
     background-color: #fff;
+
+    /* 헤더 픽스시 주석 풀기 */
+    /* position: fixed; */
+    /* margin-top: -72px; */
 }
 .header {
     /* display: fixed; */
@@ -24,7 +26,7 @@ header{
 
 } 
 .header-content {
-    width: 2.5% 15%;
+    width: 1280px;
     display: flex;
     margin: 0 auto;
     top: 50%;
@@ -33,10 +35,11 @@ header{
 
 }
 .header-logo {
+    /* 헤더 픽스 시 주석 풀기 */
     /* margin-top: 6px; */
 }
 .ex{
-margin-top: 72px;
+/* margin-top: 72px; */
 }
 .header-file {
     font-size: 15px;
@@ -104,6 +107,7 @@ label{
 }
 .red{
     color: #DD4B39;
+    font-size: 14px;
 }
 .add-btn{
     width: 65px;
@@ -188,7 +192,9 @@ button.delete-btn:hover{
     margin-left: -12px;
 }
 
-
+.idcode input, .schoolName input{
+    color: #fff;
+}
 .three{
     padding-top: 26px;
 }
